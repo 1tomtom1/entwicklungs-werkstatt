@@ -48,8 +48,8 @@ cd /var/www
 
 ### 2.2 Git-Repository klonen
 ```bash
-git clone https://github.com/1tomtom1/KI-coach-gespraechsfuehrung.git
-cd KI-coach-gespraechsfuehrung/Ikigai-Webseite
+git clone https://github.com/1tomtom1/entwicklungs-werkstatt.git
+cd entwicklungs-werkstatt
 ```
 
 ### 2.3 Dependencies installieren
@@ -81,7 +81,7 @@ server {
     listen [::]:80;
     server_name entwicklungs-werkstatt.com www.entwicklungs-werkstatt.com;
 
-    root /var/www/KI-coach-gespraechsfuehrung/Ikigai-Webseite/dist;
+    root /var/www/entwicklungs-werkstatt/dist;
     index index.html;
 
     # Alle Requests zur index.html (für React Router)
@@ -204,7 +204,7 @@ sudo systemctl restart nginx
 ### Updates hochfahren (nach Code-Changes)
 
 ```bash
-cd /var/www/KI-coach-gespraechsfuehrung/Ikigai-Webseite
+cd /var/www/entwicklungs-werkstatt
 git pull origin master
 npm install
 npm run build
@@ -243,7 +243,7 @@ free -h
 ### Backup des Projektordners
 ```bash
 tar -czf ~/ikigai-backup-$(date +%Y%m%d).tar.gz \
-  /var/www/KI-coach-gespraechsfuehrung/
+  /var/www/entwicklungs-werkstatt/
 ```
 
 ### Firewall-Regeln (ufw)

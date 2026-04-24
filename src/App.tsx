@@ -167,28 +167,22 @@ export default function App() {
 
       <section className="section section-about">
         <h2>Über uns</h2>
-        <p className="intro-text">
-          Hier stellen wir die Trainerinnen und Trainer vor – die Details und persönlichen Texte folgen später.
-        </p>
+        <div className="about-intro">
+          <p>Wir begleiten Menschen mit Leidenschaft dabei, sich weiterzuentwickeln, neue Perspektiven zu entdecken und eigene Stärken bewusster zu nutzen.</p>
+          <p>Wir beide brennen für unsere Arbeit, die darin besteht, Menschen in ihrer persönlichen Entwicklung ein Stück zu begleiten. Im Hauptberuf sind wir Führungskräftetrainer und Coaches – mit fundierten Ausbildungen in beiden Bereichen. Seit 2013 haben wir zahlreiche Workshops, Seminare und persönliche Coachings gestaltet und dabei immer wieder erlebt, wie wertvoll ein geschützter Raum für Austausch, Reflexion und Entwicklung sein kann.</p>
+          <p>Da wir beide in Bruchköbel leben, ist es uns ein besonderes Anliegen, nun auch hier vor Ort ein Angebot zu schaffen: nahbar, persönlich und mit echtem Bezug zu unserer Heimatstadt.</p>
+          <p>Wenn Du Lust hast, Dich ein Stück von uns begleiten zu lassen, bist Du herzlich willkommen in unserem Workshop.</p>
+        </div>
         <div className="about-grid">
           <article className="about-card">
-            <div className="about-avatar">Trainer/-in 1</div>
-            <div className="about-content">
-              <h3>Trainer/-in 1</h3>
-              <p>Erfahrung in Coaching, Führung und Persönlichkeitsentwicklung. Hier steht später der vollständige Trainertext.</p>
-            </div>
+            <img src="/Thomas.jpeg" alt="Thomas Wiedmann" className="about-photo" />
+            <h3 className="about-name">Thomas Wiedmann</h3>
           </article>
           <article className="about-card">
-            <div className="about-avatar">Trainer/-in 2</div>
-            <div className="about-content">
-              <h3>Trainer/-in 2</h3>
-              <p>Expertise in Workshop-Moderation, Teamdynamik und individuellen Entwicklungsprozessen. Text kommt noch.</p>
-            </div>
+            <img src="/Franziska.jpeg" alt="Franziska Splinter" className="about-photo" />
+            <h3 className="about-name">Franziska Splinter</h3>
           </article>
         </div>
-        <p className="summary-text">
-          Die vollständigen Beschreibungen der Trainerinnen und Trainer ergänzen wir, sobald du die Texte geliefert hast.
-        </p>
       </section>
 
       {/* Footer */}

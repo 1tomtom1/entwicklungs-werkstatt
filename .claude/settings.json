@@ -5,7 +5,10 @@
       "Bash(git remote *)",
       "Bash(git push *)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(npm run *)",
+      "Bash(ssh -o StrictHostKeyChecking=no root@187.124.181.83 \"systemctl start nginx && systemctl status nginx 2>&1 | head -20\")",
+      "Bash(ssh -o StrictHostKeyChecking=no root@187.124.181.83 \"journalctl -xeu nginx.service --no-pager | tail -30\")"
     ]
   }
 }

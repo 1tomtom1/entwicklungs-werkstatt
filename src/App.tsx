@@ -1,14 +1,8 @@
-import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './App.css'
-import Impressum from './Impressum'
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState<'home' | 'impressum'>('home')
   const stripeCheckoutPlaceholder = 'https://stripe.com/checkout-placeholder'
-
-  if (currentPage === 'impressum') {
-    return <Impressum onBack={() => setCurrentPage('home')} />
-  }
 
   return (
     <div className="app">
@@ -99,7 +93,7 @@ export default function App() {
       <section className="section section-ikigai">
         <h2>Was ist eigentlich Ikigai?</h2>
         <p className="intro-text">
-          Ikigai (生き甲斐) ist ein japanisches Konzept und bedeutet frei übersetzt: „Das, wofür es sich lohnt, morgens aufzustehen.“
+          Ikigai (生き甲斐) ist ein japanisches Konzept und bedeutet frei übersetzt: „Das, wofür es sich lohnt, morgens aufzustehen."
         </p>
         <p className="intro-text">
           Es ist die Schnittmenge aus vier lebenswichtigen Fragen, die wir oft aus dem Blick verlieren:
@@ -191,10 +185,10 @@ export default function App() {
           <div className="footer-section">
             <h4>Rechtliches</h4>
             <ul>
-              <li><a href="#" onClick={(e) => { e.preventDefault(); setCurrentPage('impressum'); }}>Impressum</a></li>
-              <li><a href="#">Datenschutz</a></li>
-              <li><a href="#">AGB</a></li>
-              <li><a href="#">Widerrufsrecht</a></li>
+              <li><Link to="/impressum">Impressum</Link></li>
+              <li><Link to="/datenschutz">Datenschutz</Link></li>
+              <li><Link to="/agb">AGB</Link></li>
+              <li><Link to="/widerruf">Widerrufsrecht</Link></li>
             </ul>
           </div>
           <div className="footer-section">

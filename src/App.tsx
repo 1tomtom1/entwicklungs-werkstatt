@@ -9,6 +9,7 @@ export default function App() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-content">
+          <img src="/logo-ikigai-kreis.svg" alt="Ikigai Logo" className="hero-logo" />
           <p className="hero-tagline">Das Ikigai-Prinzip</p>
           <h1 className="hero-title">Finde mehr Sinn und Freude in deinem Leben.</h1>
           <p className="subheadline hero-subheadline">

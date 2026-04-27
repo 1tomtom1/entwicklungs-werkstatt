@@ -159,6 +159,13 @@ strong, .font-weight-600 {
   margin-right: auto;
 }
 
+.hero-logo {
+  width: clamp(80px, 15vw, 120px);
+  height: auto;
+  margin-bottom: var(--space-md);
+  filter: drop-shadow(0 2px 16px rgba(0,0,0,0.35));
+}
+
 .hero-note {
   margin-top: 1rem;
   color: rgba(255, 255, 255, 0.82);

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import './App.css'
 
 export default function App() {
-  const stripeCheckoutPlaceholder = 'https://stripe.com/checkout-placeholder'
+  const stripeCheckoutUrl = 'https://buy.stripe.com/bJe8wO8oscrc2aU4GK2wU01'
 
   return (
     <div className="app">
@@ -16,7 +16,7 @@ export default function App() {
           </p>
           <button
             className="btn btn-primary btn-large hero-button"
-            onClick={() => window.location.href = stripeCheckoutPlaceholder}
+            onClick={() => window.location.href = stripeCheckoutUrl}
           >
             Jetzt Platz sichern für 69 Euro
           </button>
@@ -149,7 +149,7 @@ export default function App() {
           </p>
           <button
             className="btn btn-primary btn-large hero-button"
-            onClick={() => window.location.href = stripeCheckoutPlaceholder}
+            onClick={() => window.location.href = stripeCheckoutUrl}
           >
             Jetzt verbindlich anmelden & Platz sichern
           </button>

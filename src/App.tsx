@@ -61,33 +61,33 @@ export default function App() {
         <h2>Für wen der Workshop ist</h2>
         <div className="checklist-intro-wrapper">
           <p className="intro-text intro-text-bold">
-            Du bist hier richtig, wenn Du...
+            Du bist hier genau richtig, wenn Du...
           </p>
           <div className="checklist">
             <div className="check-item">
               <span className="check-icon">✓</span>
-              <p><strong>Verantwortung trägst,</strong> aber spürst, dass deine eigene Begeisterung im Alltagstrübel oft auf der Strecke bleibt.</p>
+              <p><strong>Vor einer beruflichen Weggabelung stehst</strong> und Du wissen willst, ob dieser Weg wirklich zu Deinen inneren Werten passt.</p>
             </div>
           <div className="check-item">
             <span className="check-icon">✓</span>
-            <p><strong>Erfolgreich bist,</strong> dich aber dennoch fragst, ob das schon alles war oder da noch ein tieferer Sinn auf dich wartet.</p>
+            <p><strong>Dich im Hamsterrad Deines Jobs fragst: „War das schon alles?"</strong> Du suchst nach der nötigen Klarheit, um Dich vielleicht sogar nebenberuflich neu zu erfinden.</p>
           </div>
           <div className="check-item">
             <span className="check-icon">✓</span>
-            <p><strong>Vor einer Entscheidung stehst</strong> und eine strukturierte Methode suchst, um Kopf und Bauchgefühl in Einklang zu bringen.</p>
+            <p><strong>Dich jahrelang für andere aufgegeben hast</strong> – und jetzt endlich den Mut finden willst, herauszufinden, was Dir Freude bereitet, was Deinem Leben Sinn verleiht und wie Du Dir wieder Raum für Deine eigenen Bedürfnisse schaffst.</p>
           </div>
           <div className="check-item">
             <span className="check-icon">✓</span>
-            <p><strong>Den Wunsch nach Veränderung hast,</strong> aber statt vager Ratschläge ein konkretes Werkzeug (dein Ikigai) bevorzugst.</p>
+            <p><strong>In Deiner Beziehung nur noch „nebeneinander herlebst"</strong> und Klarheit darüber suchst, was Dir für eine erfüllte Zukunft wirklich wichtig ist und welche Schritte sich für Dich richtig anfühlen.</p>
           </div>
           <div className="check-item">
             <span className="check-icon">✓</span>
-            <p><strong>Qualität schätzt</strong> und den Austausch in einem exklusiven Kreis von Gleichgesinnten auf Augenhöhe suchst.</p>
+            <p><strong>Keine vagen Ratschläge, sondern eine Entscheidungshilfe suchst.</strong> Du willst Dein Kopf- und Bauchgefühl endlich in Einklang bringen, um mit einem klaren „Ja" zu Dir selbst den nächsten Schritt zu gehen.</p>
           </div>
         </div>
       </div>
         <p className="summary-text">
-          <strong>Kurzum:</strong> Der Workshop ist für Menschen, die bereit sind, für drei Stunden die Pausentaste zu drücken, um danach mit mehr Fokus, Klarheit und Freude wieder durchzustarten.
+          <strong>Kurzum:</strong> Der Workshop ist für Menschen, die bereit sind, für drei Stunden die Pause-Taste zu drücken, um das Fundament für ihre nächsten großen Entscheidungen zu legen.
         </p>
       </section>
 

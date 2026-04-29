@@ -10,10 +10,11 @@ export default function App() {
       <section className="hero">
         <div className="hero-content">
           <img src="/logo-ikigai-kreis.svg" alt="Ikigai Logo" className="hero-logo" />
-          <p className="hero-tagline">Das Ikigai-Prinzip</p>
-          <h1 className="hero-title">Finde mehr Sinn und Freude in deinem Leben.</h1>
+          <p className="hero-tagline">IKIGAI-Workshop</p>
+          <h1 className="hero-title">Gewinne mehr Klarheit in deinem Leben.</h1>
           <p className="subheadline hero-subheadline">
-            Dein 3-stündiger Intensiv-Workshop für berufliche und private Klarheit. Live im LOKAL Bruchköbel.
+            Dein 3-stündiger Intensiv-Workshop für berufliche und private Lebenssituationen.<br />
+            Live im LOKAL Bruchköbel.
           </p>
           <button
             className="btn btn-primary btn-large hero-button"
@@ -146,7 +147,7 @@ export default function App() {
           </ul>
           <p className="price-highlight"><strong>Wichtiger Hinweis zur Verpflegung:</strong></p>
           <p className="note-text">
-            Damit du bestens versorgt bist, kannst Du im LOKAL vorab Kaltgetränke, Kaffespezialitäten und kleine Snacks ganz nach deinem Geschmack auf eigene Rechnung bestellen.
+            Damit du bestens versorgt bist, kannst Du im LOKAL Kaltgetränke, Kaffespezialitäten und kleine Snacks ganz nach deinem Geschmack auf eigene Rechnung bestellen.
           </p>
           <button
             className="btn btn-primary btn-large hero-button"

@@ -144,6 +144,7 @@ export default function App() {
             <li>Teilnahme am Live-Workshop - geleitet von zwei erfahrenen Trainer/-innen</li>
             <li>Das Ikigai-Workbook - ein hochwertiges, gedrucktes Arbeitsbuch für deine Reflexion und spätere Nutzung</li>
             <li>exklusiver Rahmen - eine kleine Gruppe von maximal 14 Teilnehmern/-innen für echten Austausch auf Augenhöhe</li>
+            <li>faire Rückzahlungs-Garantie: Falls die Mindestanzahl von 8 Teilnehmer/-innen nicht erreicht wird, erhältst Du Deine Kursgebühr zu 100% zurückerstattet.</li>
           </ul>
           <p className="price-highlight"><strong>Wichtiger Hinweis zur Verpflegung:</strong></p>
           <p className="note-text">

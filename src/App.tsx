@@ -172,11 +172,11 @@ export default function App() {
         </div>
         <div className="about-grid">
           <article className="about-card">
-            <img src="/Thomas.jpeg" alt="Thomas Wiedmann" className="about-photo" />
+            <img src="/Thomas_neu.png" alt="Thomas Wiedmann" className="about-photo" />
             <h3 className="about-name">Thomas Wiedmann</h3>
           </article>
           <article className="about-card">
-            <img src="/Franziska.jpeg" alt="Franziska Splinter" className="about-photo" />
+            <img src="/Franziska_neu.png" alt="Franziska Splinter" className="about-photo" />
             <h3 className="about-name">Franziska Splinter</h3>
           </article>
         </div>

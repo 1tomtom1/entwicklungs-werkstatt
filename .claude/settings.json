@@ -8,7 +8,24 @@
       "Bash(git commit *)",
       "Bash(npm run *)",
       "Bash(ssh -o StrictHostKeyChecking=no root@187.124.181.83 \"systemctl start nginx && systemctl status nginx 2>&1 | head -20\")",
-      "Bash(ssh -o StrictHostKeyChecking=no root@187.124.181.83 \"journalctl -xeu nginx.service --no-pager | tail -30\")"
+      "Bash(ssh -o StrictHostKeyChecking=no root@187.124.181.83 \"journalctl -xeu nginx.service --no-pager | tail -30\")",
+      "Bash(ssh -V)",
+      "Bash(ssh -o StrictHostKeyChecking=no -o ConnectTimeout=15 root@187.124.181.83 \"docker ps 2>&1 && echo '---' && ls /opt/feedback-coach/ 2>&1\")",
+      "Bash(ssh -o StrictHostKeyChecking=no -o ConnectTimeout=15 root@187.124.181.83 \"docker exec feedback-coach-nginx-1 nginx -s reload 2>&1\")",
+      "Bash(ssh -o StrictHostKeyChecking=no -o ConnectTimeout=15 root@187.124.181.83 \"cat /opt/feedback-coach/docker-compose.yml 2>&1\")",
+      "Bash(ssh -o StrictHostKeyChecking=no -o ConnectTimeout=15 root@187.124.181.83 \"echo '=== Host /etc/letsencrypt ===' && openssl x509 -noout -dates -in /etc/letsencrypt/live/entwicklungs-werkstatt.com/fullchain.pem 2>&1 && echo '=== Container-Pfad ===' && openssl x509 -noout -dates -in /opt/feedback-coach/nginx/certbot/conf/live/entwicklungs-werkstatt.com/fullchain.pem 2>&1\")",
+      "Bash(ssh -o StrictHostKeyChecking=no -o ConnectTimeout=15 root@187.124.181.83 \"rsync -a /etc/letsencrypt/live/entwicklungs-werkstatt.com/ /opt/feedback-coach/nginx/certbot/conf/live/entwicklungs-werkstatt.com/ && rsync -a /etc/letsencrypt/archive/entwicklungs-werkstatt.com/ /opt/feedback-coach/nginx/certbot/conf/archive/entwicklungs-werkstatt.com/ && echo 'Kopiert' && openssl x509 -noout -dates -in /opt/feedback-coach/nginx/certbot/conf/live/entwicklungs-werkstatt.com/fullchain.pem 2>&1\")",
+      "Bash(ssh -o StrictHostKeyChecking=no -o ConnectTimeout=15 root@187.124.181.83 \"docker exec feedback-coach-nginx-1 nginx -s reload && sleep 2 && echo | openssl s_client -connect localhost:443 -servername www.entwicklungs-werkstatt.com 2>/dev/null | openssl x509 -noout -dates 2>&1\")",
+      "Bash(bash deploy.sh)",
+      "Bash(ssh -o StrictHostKeyChecking=no -o ConnectTimeout=15 root@187.124.181.83 \"rsync --version > /dev/null 2>&1 && echo 'rsync ok'\")",
+      "Bash(scp -o StrictHostKeyChecking=no -r dist/* root@187.124.181.83:/var/www/entwicklungs-werkstatt/dist/)",
+      "Bash(ssh -o StrictHostKeyChecking=no -o ConnectTimeout=15 root@187.124.181.83 \"grep -r 'November\\\\|19:00' /var/www/entwicklungs-werkstatt/dist/assets/*.js 2>/dev/null | head -3\")",
+      "Bash(ssh -o StrictHostKeyChecking=no -o ConnectTimeout=15 root@187.124.181.83 \"systemctl status certbot.timer 2>&1 | head -15\")",
+      "Bash(ssh -o StrictHostKeyChecking=no -o ConnectTimeout=15 root@187.124.181.83 \"bash /etc/letsencrypt/renewal-hooks/deploy/copy-to-docker.sh 2>&1 && echo 'Hook erfolgreich'\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173)",
+      "Bash(python -c \"from PIL import Image; print\\('Pillow OK'\\)\")",
+      "Bash(pip install *)",
+      "Bash(python -c ' *)"
     ]
   }
 }

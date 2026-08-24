@@ -7,7 +7,8 @@ import '@fontsource/lora/500.css'
 import '@fontsource/montserrat/400.css'
 import '@fontsource/montserrat/500.css'
 import '@fontsource/montserrat/600.css'
-import App from './App.tsx'
+import Home from './Home.tsx'
+import IkigaiWorkshop from './IkigaiWorkshop.tsx'
 import Impressum from './Impressum.tsx'
 import AGB from './AGB.tsx'
 import Widerrufsbelehrung from './Widerrufsbelehrung.tsx'
@@ -18,7 +19,8 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/ikigai-workshop" element={<IkigaiWorkshop />} />
         <Route path="/impressum" element={<Impressum />} />
         <Route path="/agb" element={<AGB />} />
         <Route path="/widerruf" element={<Widerrufsbelehrung />} />

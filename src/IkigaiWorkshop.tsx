@@ -1,27 +1,33 @@
 import { Link } from 'react-router-dom'
 import './App.css'
+import Footer from './Footer'
 
-export default function App() {
+export default function IkigaiWorkshop() {
   const stripeCheckoutUrl = 'https://buy.stripe.com/bJe8wO8oscrc2aU4GK2wU01'
 
   return (
     <div className="app">
+      <a href="#main-content" className="skip-link">Zum Inhalt springen</a>
+      <div className="top-bar">
+        <Link to="/" className="top-bar-link">← Zur Startseite</Link>
+      </div>
+
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero" id="main-content">
         <div className="hero-content">
           <img src="/logo-ikigai-kreis.svg" alt="Ikigai Logo" className="hero-logo" />
           <p className="hero-tagline">IKIGAI-Workshop</p>
           <h1 className="hero-title">Gewinne mehr Klarheit in deinem Leben.</h1>
           <p className="subheadline hero-subheadline">
-            Dein 3-stündiger Intensiv-Workshop für berufliche und private Lebenssituationen.<br />
+            Dein 4-stündiger Intensiv-Workshop für berufliche und private Lebenssituationen.<br />
             Live im LOKAL Bruchköbel.
           </p>
-          <button
+          <a
+            href={stripeCheckoutUrl}
             className="btn btn-primary btn-large hero-button"
-            onClick={() => window.location.href = stripeCheckoutUrl}
           >
             Jetzt Platz sichern für 69 Euro
-          </button>
+          </a>
           <p className="hero-note">
             Begrenzt auf 14 Teilnehmer/-innen für einen persönlichen und intensiven Austausch.
           </p>
@@ -45,7 +51,7 @@ export default function App() {
           </div>
           <div className="card">
             <h3>Deine Stärken schärfen</h3>
-            <p>Werde dir deiner Talente bewusst – auch jener, die im Alltag oft als „selbstverständlich" übergangen werden.</p>
+            <p>Werde dir deiner Talente bewusst – auch jener, die im Alltag oft als „selbstverständlich“ übergangen werden.</p>
           </div>
           <div className="card">
             <h3>Deinen Wert erkennen</h3>
@@ -62,28 +68,28 @@ export default function App() {
         <h2>Für wen der Workshop ist</h2>
         <div className="checklist-intro-wrapper">
           <p className="intro-text intro-text-bold">
-            Du bist hier genau richtig, wenn Du...
+            Du bist hier genau richtig, wenn Du…
           </p>
           <div className="checklist">
             <div className="check-item">
-              <span className="check-icon">✓</span>
+              <span className="check-icon" aria-hidden="true">✓</span>
               <p><strong>Vor einer beruflichen Weggabelung stehst</strong> und Du wissen willst, ob dieser Weg wirklich zu Deinen inneren Werten passt.</p>
             </div>
           <div className="check-item">
-            <span className="check-icon">✓</span>
-            <p><strong>Dich im Hamsterrad Deines Jobs fragst: „War das schon alles?"</strong> Du suchst nach der nötigen Klarheit, um Dich vielleicht sogar nebenberuflich neu zu erfinden.</p>
+            <span className="check-icon" aria-hidden="true">✓</span>
+            <p><strong>Dich im Hamsterrad Deines Jobs fragst: „War das schon alles?“</strong> Du suchst nach der nötigen Klarheit, um Dich vielleicht sogar nebenberuflich neu zu erfinden.</p>
           </div>
           <div className="check-item">
-            <span className="check-icon">✓</span>
+            <span className="check-icon" aria-hidden="true">✓</span>
             <p><strong>Dich jahrelang für andere aufgegeben hast</strong> – und jetzt endlich den Mut finden willst, herauszufinden, was Dir Freude bereitet, was Deinem Leben Sinn verleiht und wie Du Dir wieder Raum für Deine eigenen Bedürfnisse schaffst.</p>
           </div>
           <div className="check-item">
-            <span className="check-icon">✓</span>
-            <p><strong>In Deiner Beziehung nur noch „nebeneinander herlebst"</strong> und Klarheit darüber suchst, was Dir für eine erfüllte Zukunft wirklich wichtig ist und welche Schritte sich für Dich richtig anfühlen.</p>
+            <span className="check-icon" aria-hidden="true">✓</span>
+            <p><strong>In Deiner Beziehung nur noch „nebeneinander herlebst“</strong> und Klarheit darüber suchst, was Dir für eine erfüllte Zukunft wirklich wichtig ist und welche Schritte sich für Dich richtig anfühlen.</p>
           </div>
           <div className="check-item">
-            <span className="check-icon">✓</span>
-            <p><strong>Keine vagen Ratschläge, sondern eine Entscheidungshilfe suchst.</strong> Du willst Dein Kopf- und Bauchgefühl endlich in Einklang bringen, um mit einem klaren „Ja" zu Dir selbst den nächsten Schritt zu gehen.</p>
+            <span className="check-icon" aria-hidden="true">✓</span>
+            <p><strong>Keine vagen Ratschläge, sondern eine Entscheidungshilfe suchst.</strong> Du willst Dein Kopf- und Bauchgefühl endlich in Einklang bringen, um mit einem klaren „Ja“ zu Dir selbst den nächsten Schritt zu gehen.</p>
           </div>
         </div>
       </div>
@@ -95,7 +101,7 @@ export default function App() {
       <section className="section section-ikigai">
         <h2>Was ist eigentlich Ikigai?</h2>
         <p className="intro-text">
-          Ikigai (生き甲斐) ist ein japanisches Konzept und bedeutet frei übersetzt: „Das, wofür es sich lohnt, morgens aufzustehen."
+          Ikigai (生き甲斐) ist ein japanisches Konzept und bedeutet frei übersetzt: „Das, wofür es sich lohnt, morgens aufzustehen.“
         </p>
         <p className="intro-text">
           Es ist die Schnittmenge aus vier lebenswichtigen Fragen, die wir oft aus dem Blick verlieren:
@@ -111,17 +117,38 @@ export default function App() {
         </p>
       </section>
 
+      {/* Section: Eindrücke vom letzten Workshop */}
+      <section className="section section-gallery">
+        <h2>Eindrücke vom letzten Workshop</h2>
+        <div className="gallery-grid-landscape">
+          <img src="/Workshop_02.jpg" alt="Der Workshopraum im LOKAL Bruchköbel" className="gallery-img-landscape" loading="lazy" />
+          <img src="/Workshop_03.jpg" alt="Workshop-Materialien auf dem Tisch" className="gallery-img-landscape" loading="lazy" />
+          <img src="/Workshop_04.jpg" alt="Flipchart: Die 5 häufigsten Bedauern am Sterbebett" className="gallery-img-landscape" loading="lazy" />
+          <img src="/Workshop_08.jpg" alt="Tischaufbau mit Blumen und Materialien" className="gallery-img-landscape" loading="lazy" />
+          <img src="/Workshop_09.jpg" alt="Franziska beim Workshop im LOKAL" className="gallery-img-landscape" loading="lazy" />
+          <img src="/Workshop_12.jpg" alt="Atmosphärische Nahaufnahme am Tisch" className="gallery-img-landscape" loading="lazy" />
+        </div>
+        <div className="gallery-grid-portrait">
+          <img src="/Workshop_01.jpg" alt="Begrüßungs-Flipchart IKIGAI Workshop" className="gallery-img-portrait" loading="lazy" />
+          <img src="/Workshop_05.jpg" alt="Teilnehmer beim Arbeiten" className="gallery-img-portrait" loading="lazy" />
+          <img src="/Workshop_06.jpg" alt="Teilnehmerinnen im Gespräch" className="gallery-img-portrait" loading="lazy" />
+          <img src="/Workshop_07.jpeg" alt="Flipchart mit Workshop-Mindmap" className="gallery-img-portrait" loading="lazy" />
+          <img src="/Workshop_10.jpg" alt="Thomas Wiedmann am Ikigai-Diagramm" className="gallery-img-portrait" loading="lazy" />
+          <img src="/Workshop_11.jpg" alt="Flipchart: 4 Fragen zum Abschluss" className="gallery-img-portrait" loading="lazy" />
+        </div>
+      </section>
+
       {/* Section 5: Datum, Ort, Dauer */}
       <section className="section section-5">
         <h2>Wann und wo wir uns treffen</h2>
         <div className="event-details event-details-two-columns">
           <div className="detail-block">
             <h3>Datum</h3>
-            <p>Sonntag, 31. Mai 2026</p>
+            <p>Sonntag, 1. November 2026</p>
           </div>
           <div className="detail-block">
             <h3>Zeit</h3>
-            <p>15:00 – 18:00 Uhr</p>
+            <p>15:00 – 19:00 Uhr</p>
           </div>
           <div className="detail-block">
             <h3>Ort</h3>
@@ -129,7 +156,7 @@ export default function App() {
           </div>
           <div className="detail-block">
             <h3>Dauer</h3>
-            <p>3 Stunden inklusive einer Pause</p>
+            <p>4 Stunden inklusive Pausen</p>
           </div>
         </div>
       </section>
@@ -150,12 +177,12 @@ export default function App() {
           <p className="note-text">
             Damit du bestens versorgt bist, kannst Du im LOKAL Kaltgetränke, Kaffespezialitäten und kleine Snacks ganz nach deinem Geschmack auf eigene Rechnung bestellen.
           </p>
-          <button
+          <a
+            href={stripeCheckoutUrl}
             className="btn btn-primary btn-large hero-button"
-            onClick={() => window.location.href = stripeCheckoutUrl}
           >
             Jetzt verbindlich anmelden & Platz sichern
-          </button>
+          </a>
           <p className="payment-note centered-payment-note">
             Sichere Zahlung per Kreditkarte, Apple Pay, Google Pay oder SEPA-Lastschrift über den Zahlungsdienstleister Stripe
           </p>
@@ -169,42 +196,12 @@ export default function App() {
           <p>Wir beide brennen für unsere Arbeit, die darin besteht, Menschen in ihrer persönlichen Entwicklung ein Stück zu begleiten. Im Hauptberuf sind wir Führungskräftetrainer und Coaches – mit fundierten Ausbildungen in beiden Bereichen. Seit 2013 haben wir zahlreiche Workshops, Seminare und persönliche Coachings gestaltet und dabei immer wieder erlebt, wie wertvoll ein geschützter Raum für Austausch, Reflexion und Entwicklung sein kann.</p>
           <p>Da wir beide in Bruchköbel leben, ist es uns ein besonderes Anliegen, nun auch hier vor Ort ein Angebot zu schaffen: nahbar, persönlich und mit echtem Bezug zu unserer Heimatstadt.</p>
           <p>Wenn Du Lust hast, Dich ein Stück von uns begleiten zu lassen, bist Du herzlich willkommen in unserem Workshop.</p>
+          <p className="about-name">Franziska Splinter und Thomas Wiedmann</p>
         </div>
-        <div className="about-grid">
-          <article className="about-card">
-            <img src="/Thomas_neu.png" alt="Thomas Wiedmann" className="about-photo" />
-            <h3 className="about-name">Thomas Wiedmann</h3>
-          </article>
-          <article className="about-card">
-            <img src="/Franziska_neu.png" alt="Franziska Splinter" className="about-photo" />
-            <h3 className="about-name">Franziska Splinter</h3>
-          </article>
-        </div>
+        <img src="/Franziska und Thomas.jpg" alt="Thomas Wiedmann und Franziska Splinter" className="about-photo-large" loading="lazy" />
       </section>
 
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-section">
-            <h4>Rechtliches</h4>
-            <ul>
-              <li><Link to="/impressum">Impressum</Link></li>
-              <li><Link to="/datenschutz">Datenschutz</Link></li>
-              <li><Link to="/agb">AGB</Link></li>
-              <li><Link to="/widerruf">Widerrufsrecht</Link></li>
-            </ul>
-          </div>
-          <div className="footer-section">
-            <h4>Zahlung & Sicherheit</h4>
-            <p>Sichere Zahlungsabwicklung über Stripe. Alle Transaktionen sind SSL-verschlüsselt.</p>
-            <p>Bei Fragen zur Zahlung wenden Sie sich bitte an office@entwicklungs-werkstatt.com</p>
-          </div>
-          <div className="footer-section">
-            <h4>Kontakt</h4>
-            <p>office@entwicklungs-werkstatt.com</p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
     </div>
   )
 }

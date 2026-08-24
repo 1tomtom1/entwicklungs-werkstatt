@@ -5,7 +5,8 @@ const h2style = { fontSize: '1.5rem', color: 'var(--dark)', marginTop: '2rem', t
 export default function Impressum() {
   return (
     <div className="app">
-      <section className="section">
+      <a href="#main-content" className="skip-link">Zum Inhalt springen</a>
+      <section className="section" id="main-content">
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <Link to="/" className="btn btn-back" style={{ marginBottom: '2rem', display: 'inline-block' }}>
             ← Zurück zur Startseite

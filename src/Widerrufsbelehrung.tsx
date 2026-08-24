@@ -6,7 +6,8 @@ const h3style = { fontSize: '1.1rem', color: 'var(--dark)', marginTop: '1.5rem',
 export default function Widerrufsbelehrung() {
   return (
     <div className="app">
-      <section className="section">
+      <a href="#main-content" className="skip-link">Zum Inhalt springen</a>
+      <section className="section" id="main-content">
         <div style={{ maxWidth: '900px', margin: '0 auto' }}>
           <Link to="/" className="btn btn-back" style={{ marginBottom: '2rem', display: 'inline-block' }}>
             ← Zurück zur Startseite

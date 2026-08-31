@@ -3,7 +3,7 @@ import './App.css'
 import Footer from './Footer'
 
 export default function IkigaiWorkshop() {
-  const stripeCheckoutUrl = 'https://buy.stripe.com/bJe8wO8oscrc2aU4GK2wU01'
+  const stripeCheckoutUrl = 'https://buy.stripe.com/bJecN47kocrcg1K6OS2wU02'
 
   return (
     <div className="app">

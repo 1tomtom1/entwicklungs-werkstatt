@@ -15,7 +15,7 @@ export default function IkigaiWorkshop() {
       {/* Hero Section */}
       <section className="hero" id="main-content">
         <div className="hero-content">
-          <img src="/logo-ikigai-kreis.svg" alt="Ikigai Logo" className="hero-logo" />
+          <img src="/logo-ikigai-kreis.svg" alt="Ikigai Logo" className="hero-logo" width="279" height="279" />
           <p className="hero-tagline">IKIGAI-Workshop</p>
           <h1 className="hero-title">Gewinne mehr Klarheit in deinem Leben.</h1>
           <p className="subheadline hero-subheadline">
@@ -26,10 +26,10 @@ export default function IkigaiWorkshop() {
             href={stripeCheckoutUrl}
             className="btn btn-primary btn-large hero-button"
           >
-            Jetzt Platz sichern für 69 Euro
+            Jetzt Platz sichern für 69&nbsp;Euro
           </a>
           <p className="hero-note">
-            Begrenzt auf 14 Teilnehmer/-innen für einen persönlichen und intensiven Austausch.
+            Begrenzt auf 14&nbsp;Teilnehmer/-innen für einen persönlichen und intensiven Austausch.
           </p>
         </div>
       </section>
@@ -121,20 +121,20 @@ export default function IkigaiWorkshop() {
       <section className="section section-gallery">
         <h2>Eindrücke vom letzten Workshop</h2>
         <div className="gallery-grid-landscape">
-          <img src="/Workshop_02.jpg" alt="Der Workshopraum im LOKAL Bruchköbel" className="gallery-img-landscape" loading="lazy" />
-          <img src="/Workshop_03.jpg" alt="Workshop-Materialien auf dem Tisch" className="gallery-img-landscape" loading="lazy" />
-          <img src="/Workshop_04.jpg" alt="Flipchart: Die 5 häufigsten Bedauern am Sterbebett" className="gallery-img-landscape" loading="lazy" />
-          <img src="/Workshop_08.jpg" alt="Tischaufbau mit Blumen und Materialien" className="gallery-img-landscape" loading="lazy" />
-          <img src="/Workshop_09.jpg" alt="Franziska beim Workshop im LOKAL" className="gallery-img-landscape" loading="lazy" />
-          <img src="/Workshop_12.jpg" alt="Atmosphärische Nahaufnahme am Tisch" className="gallery-img-landscape" loading="lazy" />
+          <img src="/Workshop_02.jpg" alt="Der Workshopraum im LOKAL Bruchköbel" className="gallery-img-landscape" loading="lazy" width="4000" height="2252" />
+          <img src="/Workshop_03.jpg" alt="Workshop-Materialien auf dem Tisch" className="gallery-img-landscape" loading="lazy" width="4032" height="3024" />
+          <img src="/Workshop_04.jpg" alt="Flipchart: Die 5 häufigsten Bedauern am Sterbebett" className="gallery-img-landscape" loading="lazy" width="4032" height="3024" />
+          <img src="/Workshop_08.jpg" alt="Tischaufbau mit Blumen und Materialien" className="gallery-img-landscape" loading="lazy" width="4000" height="2252" />
+          <img src="/Workshop_09.jpg" alt="Franziska beim Workshop im LOKAL" className="gallery-img-landscape" loading="lazy" width="4032" height="3024" />
+          <img src="/Workshop_12.jpg" alt="Atmosphärische Nahaufnahme am Tisch" className="gallery-img-landscape" loading="lazy" width="4032" height="3024" />
         </div>
         <div className="gallery-grid-portrait">
-          <img src="/Workshop_01.jpg" alt="Begrüßungs-Flipchart IKIGAI Workshop" className="gallery-img-portrait" loading="lazy" />
-          <img src="/Workshop_05.jpg" alt="Teilnehmer beim Arbeiten" className="gallery-img-portrait" loading="lazy" />
-          <img src="/Workshop_06.jpg" alt="Teilnehmerinnen im Gespräch" className="gallery-img-portrait" loading="lazy" />
-          <img src="/Workshop_07.jpeg" alt="Flipchart mit Workshop-Mindmap" className="gallery-img-portrait" loading="lazy" />
-          <img src="/Workshop_10.jpg" alt="Thomas Wiedmann am Ikigai-Diagramm" className="gallery-img-portrait" loading="lazy" />
-          <img src="/Workshop_11.jpg" alt="Flipchart: 4 Fragen zum Abschluss" className="gallery-img-portrait" loading="lazy" />
+          <img src="/Workshop_01.jpg" alt="Begrüßungs-Flipchart IKIGAI Workshop" className="gallery-img-portrait" loading="lazy" width="2252" height="4000" />
+          <img src="/Workshop_05.jpg" alt="Teilnehmer beim Arbeiten" className="gallery-img-portrait" loading="lazy" width="3024" height="4032" />
+          <img src="/Workshop_06.jpg" alt="Teilnehmerinnen im Gespräch" className="gallery-img-portrait" loading="lazy" width="2252" height="4000" />
+          <img src="/Workshop_07.jpeg" alt="Flipchart mit Workshop-Mindmap" className="gallery-img-portrait" loading="lazy" width="2160" height="3840" />
+          <img src="/Workshop_10.jpg" alt="Thomas Wiedmann am Ikigai-Diagramm" className="gallery-img-portrait" loading="lazy" width="2252" height="4000" />
+          <img src="/Workshop_11.jpg" alt="Flipchart: 4 Fragen zum Abschluss" className="gallery-img-portrait" loading="lazy" width="2252" height="4000" />
         </div>
       </section>
 
@@ -148,7 +148,7 @@ export default function IkigaiWorkshop() {
           </div>
           <div className="detail-block">
             <h3>Zeit</h3>
-            <p>15:00 – 19:00 Uhr</p>
+            <p>15:00 – 19:00&nbsp;Uhr</p>
           </div>
           <div className="detail-block">
             <h3>Ort</h3>
@@ -156,7 +156,7 @@ export default function IkigaiWorkshop() {
           </div>
           <div className="detail-block">
             <h3>Dauer</h3>
-            <p>4 Stunden inklusive Pausen</p>
+            <p>4&nbsp;Stunden inklusive Pausen</p>
           </div>
         </div>
       </section>
@@ -165,13 +165,13 @@ export default function IkigaiWorkshop() {
         <h2>Preis, Anmeldung & Verpflegung</h2>
         <div className="price-copy">
           <p><strong>Preis:</strong></p>
-          <p>69 Euro brutto</p>
+          <p>69&nbsp;Euro brutto</p>
           <p className="price-highlight"><strong>Das ist in deinem Ticket enthalten:</strong></p>
           <ul className="price-list">
             <li>Teilnahme am Live-Workshop - geleitet von zwei erfahrenen Trainer/-innen</li>
             <li>Das Ikigai-Workbook - ein hochwertiges, gedrucktes Arbeitsbuch für deine Reflexion und spätere Nutzung</li>
-            <li>exklusiver Rahmen - eine kleine Gruppe von maximal 14 Teilnehmern/-innen für echten Austausch auf Augenhöhe</li>
-            <li>faire Rückzahlungs-Garantie: Falls die Mindestanzahl von 8 Teilnehmer/-innen nicht erreicht wird, erhältst Du Deine Kursgebühr zu 100% zurückerstattet.</li>
+            <li>exklusiver Rahmen - eine kleine Gruppe von maximal 14&nbsp;Teilnehmern/-innen für echten Austausch auf Augenhöhe</li>
+            <li>faire Rückzahlungs-Garantie: Falls die Mindestanzahl von 8&nbsp;Teilnehmer/-innen nicht erreicht wird, erhältst Du Deine Kursgebühr zu 100%&nbsp;zurückerstattet.</li>
           </ul>
           <p className="price-highlight"><strong>Wichtiger Hinweis zur Verpflegung:</strong></p>
           <p className="note-text">
@@ -198,7 +198,7 @@ export default function IkigaiWorkshop() {
           <p>Wenn Du Lust hast, Dich ein Stück von uns begleiten zu lassen, bist Du herzlich willkommen in unserem Workshop.</p>
           <p className="about-name">Franziska Splinter und Thomas Wiedmann</p>
         </div>
-        <img src="/Franziska und Thomas.jpg" alt="Thomas Wiedmann und Franziska Splinter" className="about-photo-large" loading="lazy" />
+        <img src="/Franziska und Thomas.jpg" alt="Thomas Wiedmann und Franziska Splinter" className="about-photo-large" loading="lazy" width="3648" height="2736" />
       </section>
 
       <Footer />

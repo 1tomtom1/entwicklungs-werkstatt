@@ -13,11 +13,13 @@ import Impressum from './Impressum.tsx'
 import AGB from './AGB.tsx'
 import Widerrufsbelehrung from './Widerrufsbelehrung.tsx'
 import Datenschutz from './Datenschutz.tsx'
+import ScrollToTop from './ScrollToTop.tsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ikigai-workshop" element={<IkigaiWorkshop />} />

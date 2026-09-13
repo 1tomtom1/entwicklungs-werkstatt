@@ -198,7 +198,7 @@ export default function IkigaiWorkshop() {
           <p>Wenn Du Lust hast, Dich ein Stück von uns begleiten zu lassen, bist Du herzlich willkommen in unserem Workshop.</p>
           <p className="about-name">Franziska Splinter und Thomas Wiedmann</p>
         </div>
-        <img src="/Franziska und Thomas.jpg" alt="Thomas Wiedmann und Franziska Splinter" className="about-photo-large" loading="lazy" width="3648" height="2736" />
+        <img src="/Franziska und Thomas.jpg" alt="Thomas Wiedmann und Franziska Splinter" className="about-photo-large" loading="lazy" width="2736" height="3648" />
       </section>
 
       <Footer />

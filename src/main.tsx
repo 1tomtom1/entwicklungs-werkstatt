@@ -9,6 +9,7 @@ import '@fontsource/montserrat/500.css'
 import '@fontsource/montserrat/600.css'
 import Home from './Home.tsx'
 import IkigaiWorkshop from './IkigaiWorkshop.tsx'
+import FuehrenInVeraenderungsprozessen from './FuehrenInVeraenderungsprozessen.tsx'
 import Impressum from './Impressum.tsx'
 import AGB from './AGB.tsx'
 import Widerrufsbelehrung from './Widerrufsbelehrung.tsx'
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ikigai-workshop" element={<IkigaiWorkshop />} />
+        <Route path="/fuehren-in-veraenderungsprozessen" element={<FuehrenInVeraenderungsprozessen />} />
         <Route path="/impressum" element={<Impressum />} />
         <Route path="/agb" element={<AGB />} />
         <Route path="/widerruf" element={<Widerrufsbelehrung />} />

@@ -9,7 +9,7 @@ export default function Footer() {
           <ul>
             <li><Link to="/">Startseite</Link></li>
             <li><Link to="/ikigai-workshop">Ikigai-Workshop</Link></li>
-            <li>Veränderungen souverän meistern (in Vorbereitung)</li>
+            <li><Link to="/fuehren-in-veraenderungsprozessen">Führen in Veränderungsprozessen</Link></li>
           </ul>
         </div>
         <div className="footer-section">

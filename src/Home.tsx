@@ -41,9 +41,11 @@ export default function Home() {
             </Link>
           </div>
           <div className="card">
-            <h3>Veränderungen souverän meistern</h3>
-            <p>Ein weiteres Seminar rund um erfolgreiches Veränderungsmanagement ist in Vorbereitung.</p>
-            <p style={{ marginTop: '1rem', fontStyle: 'italic' }}>Demnächst verfügbar</p>
+            <h3>Führen in Veränderungsprozessen</h3>
+            <p>Ein Inhouse-Tagesseminar für Organisationen: Führungskräfte trainieren, Veränderungen zu begleiten – direkt an einem Veränderungsprozess, der in deiner Organisation läuft oder geplant ist.</p>
+            <Link to="/fuehren-in-veraenderungsprozessen" className="btn btn-primary" style={{ marginTop: '1rem', display: 'inline-block' }}>
+              Mehr erfahren
+            </Link>
           </div>
         </div>
       </section>

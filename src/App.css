@@ -421,6 +421,28 @@ strong, .font-weight-600 {
   display: inline-flex;
 }
 
+.closed-notice {
+  display: inline-block;
+  margin: var(--space-sm) auto 0;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+.price-copy .closed-notice {
+  display: block;
+  max-width: 700px;
+  margin: 1.5rem auto 0;
+  border-color: var(--soft-slate);
+  background: var(--soft-slate);
+  color: var(--dark);
+  text-align: center;
+}
+
 .price-copy {
   text-align: left;
 }

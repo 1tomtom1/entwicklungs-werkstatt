@@ -3,8 +3,6 @@ import './App.css'
 import Footer from './Footer'
 
 export default function IkigaiWorkshop() {
-  const stripeCheckoutUrl = 'https://buy.stripe.com/bJecN47kocrcg1K6OS2wU02'
-
   return (
     <div className="app">
       <a href="#main-content" className="skip-link">Zum Inhalt springen</a>
@@ -22,12 +20,7 @@ export default function IkigaiWorkshop() {
             Dein 4-stündiger Intensiv-Workshop für berufliche und private Lebenssituationen.<br />
             Live im LOKAL Bruchköbel.
           </p>
-          <a
-            href={stripeCheckoutUrl}
-            className="btn btn-primary btn-large hero-button"
-          >
-            Jetzt Platz sichern für 69&nbsp;Euro
-          </a>
+          <p className="closed-notice">Die Anmeldung für diesen Workshop ist geschlossen.</p>
           <p className="hero-note">
             Begrenzt auf 14&nbsp;Teilnehmer/-innen für einen persönlichen und intensiven Austausch.
           </p>
@@ -177,15 +170,7 @@ export default function IkigaiWorkshop() {
           <p className="note-text">
             Damit du bestens versorgt bist, kannst Du im LOKAL Kaltgetränke, Kaffespezialitäten und kleine Snacks ganz nach deinem Geschmack auf eigene Rechnung bestellen.
           </p>
-          <a
-            href={stripeCheckoutUrl}
-            className="btn btn-primary btn-large hero-button"
-          >
-            Jetzt verbindlich anmelden & Platz sichern
-          </a>
-          <p className="payment-note centered-payment-note">
-            Sichere Zahlung per Kreditkarte, Apple Pay, Google Pay oder SEPA-Lastschrift über den Zahlungsdienstleister Stripe
-          </p>
+          <p className="closed-notice">Die Anmeldung für diesen Workshop ist geschlossen.</p>
         </div>
       </section>
 

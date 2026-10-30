@@ -2,6 +2,16 @@ import { Link } from 'react-router-dom'
 import './App.css'
 import Footer from './Footer'
 
+const nextDateMailto =
+  'mailto:office@entwicklungs-werkstatt.com' +
+  '?subject=' + encodeURIComponent('Info zum nächsten Ikigai-Workshop') +
+  '&body=' + encodeURIComponent(
+    'Hallo,\n\n' +
+    'bitte informiert mich über den nächsten Termin des Ikigai-Workshops.\n\n' +
+    'Ich bin damit einverstanden, dass meine E-Mail-Adresse ausschließlich dafür gespeichert wird, mich über den nächsten Termin zu informieren.\n\n' +
+    'Viele Grüße'
+  )
+
 export default function IkigaiWorkshop() {
   return (
     <div className="app">
@@ -20,7 +30,10 @@ export default function IkigaiWorkshop() {
             Dein 4-stündiger Intensiv-Workshop für berufliche und private Lebenssituationen.<br />
             Live im LOKAL Bruchköbel.
           </p>
-          <p className="closed-notice">Die Anmeldung für diesen Workshop ist geschlossen.</p>
+          <p className="closed-notice">Der Workshop am 1.&nbsp;November 2026 entfällt. Einen neuen Termin geben wir bekannt.</p>
+          <a href={nextDateMailto} className="btn btn-primary btn-large hero-button">
+            Informiere mich über den nächsten Termin
+          </a>
           <p className="hero-note">
             Begrenzt auf 14&nbsp;Teilnehmer/-innen für einen persönlichen und intensiven Austausch.
           </p>
@@ -137,7 +150,7 @@ export default function IkigaiWorkshop() {
         <div className="event-details event-details-two-columns">
           <div className="detail-block">
             <h3>Datum</h3>
-            <p>Sonntag, 1. November 2026</p>
+            <p>Neuer Termin folgt (der 1.&nbsp;November 2026 entfällt)</p>
           </div>
           <div className="detail-block">
             <h3>Zeit</h3>
@@ -170,7 +183,13 @@ export default function IkigaiWorkshop() {
           <p className="note-text">
             Damit du bestens versorgt bist, kannst Du im LOKAL Kaltgetränke, Kaffespezialitäten und kleine Snacks ganz nach deinem Geschmack auf eigene Rechnung bestellen.
           </p>
-          <p className="closed-notice">Die Anmeldung für diesen Workshop ist geschlossen.</p>
+          <p className="closed-notice">Der Workshop am 1.&nbsp;November 2026 entfällt. Einen neuen Termin geben wir bekannt.</p>
+          <a href={nextDateMailto} className="btn btn-primary btn-large hero-button">
+            Informiere mich über den nächsten Termin
+          </a>
+          <p className="payment-note centered-payment-note">
+            Der Button öffnet eine vorbefüllte E-Mail. Du kannst auch direkt an office@entwicklungs-werkstatt.com schreiben.
+          </p>
         </div>
       </section>
 

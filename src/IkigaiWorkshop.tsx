@@ -30,7 +30,6 @@ export default function IkigaiWorkshop() {
             Dein 4-stündiger Intensiv-Workshop für berufliche und private Lebenssituationen.<br />
             Live im LOKAL Bruchköbel.
           </p>
-          <p className="closed-notice">Der Workshop am 1.&nbsp;November 2026 entfällt. Einen neuen Termin geben wir bekannt.</p>
           <a href={nextDateMailto} className="btn btn-primary btn-large hero-button">
             Informiere mich über den nächsten Termin
           </a>
@@ -183,7 +182,6 @@ export default function IkigaiWorkshop() {
           <p className="note-text">
             Damit du bestens versorgt bist, kannst Du im LOKAL Kaltgetränke, Kaffespezialitäten und kleine Snacks ganz nach deinem Geschmack auf eigene Rechnung bestellen.
           </p>
-          <p className="closed-notice">Der Workshop am 1.&nbsp;November 2026 entfällt. Einen neuen Termin geben wir bekannt.</p>
           <a href={nextDateMailto} className="btn btn-primary btn-large hero-button">
             Informiere mich über den nächsten Termin
           </a>
